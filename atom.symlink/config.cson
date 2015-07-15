@@ -19,6 +19,14 @@
   "autocomplete-modules":
     babelPluginModuleResolver: true
     webpack: true
+  editor:
+    showIndentGuide: true
+    fontFamily: "Menlo"
+    fontSize: 15
+    invisibles: {}
+    scrollPastEnd: true
+    tabLength: 4
+    zoomFontWhenCtrlScrolling: true
   core:
     closeDeletedFileTabs: true
     closeEmptyWindows: false
@@ -92,6 +100,14 @@
     formatOnSave: true
   welcome:
     showOnStartup: false
+  "release-notes":
+    viewedVersion: "0.89.0"
+  "ruby-test":
+    shell: "/usr/local/bin/zsh"
+    cucumberAllCommand: "bundle exec cucumber --tags ~@cross_browser --color"
+    cucumberFileCommand: "bundle exec cucumber --tags ~@cross_browser --color {relative_path}"
+    cucumberSingleCommand: "bundle exec cucumber --tags ~@cross_browser --color {relative_path}:{line_number}"
+  "merge-conflicts": {}
 ".js.jsx.react.source":
   editor:
     autoIndent: true
