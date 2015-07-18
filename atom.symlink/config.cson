@@ -123,6 +123,7 @@
   "exception-reporting":
     userId: "72c3c5ce-7216-3fdf-8b35-60589c1cd689"
   "tree-view": {}
+  "autocomplete-plus": {}
 ".js.jsx.react.source":
   editor:
     autoIndent: true
