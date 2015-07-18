@@ -1,2 +1,12 @@
+'.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
+  '': 'find-and-replace:select-next'
+
 'atom-text-editor:not([mini])':
+  'ctrl-d': 'editor:delete-line'
   'alt-s': 'sort-lines:sort'
+
+'.platform-linux atom-text-editor':
+  '': 'symbols-view:go-to-declaration'
+
+'.platform-win32, .platform-linux':
+  'alt-1': 'tree-view:toggle-focus'
