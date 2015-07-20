@@ -22,12 +22,12 @@
   editor:
     showIndentGuide: true
     fontFamily: "Inconsolata, Monaco, Consolas, 'Courier New', Courier"
-    fontSize: 15
     invisibles: {}
     scrollPastEnd: true
     tabLength: 4
     zoomFontWhenCtrlScrolling: true
     confirmCheckoutHeadRevision: false
+    fontSize: 15
   core:
     closeDeletedFileTabs: true
     closeEmptyWindows: false
