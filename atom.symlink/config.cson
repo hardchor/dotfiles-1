@@ -24,7 +24,6 @@
     fontFamily: "Inconsolata, Monaco, Consolas, 'Courier New', Courier"
     invisibles: {}
     scrollPastEnd: true
-    tabLength: 4
     zoomFontWhenCtrlScrolling: true
     confirmCheckoutHeadRevision: false
     fontSize: 15
