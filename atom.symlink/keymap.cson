@@ -10,3 +10,5 @@
 
 '.platform-win32, .platform-linux':
   'alt-1': 'tree-view:toggle-focus'
+'.platform-darwin':
+  'cmd-1': 'tree-view:toggle-focus'
