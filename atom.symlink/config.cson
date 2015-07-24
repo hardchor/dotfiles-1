@@ -27,6 +27,7 @@
     zoomFontWhenCtrlScrolling: true
     confirmCheckoutHeadRevision: false
     fontSize: 15
+    tabLength: 4
   core:
     closeDeletedFileTabs: true
     closeEmptyWindows: false
