@@ -27,7 +27,7 @@
     zoomFontWhenCtrlScrolling: true
     confirmCheckoutHeadRevision: false
     fontSize: 15
-    tabLength: 4
+    backUpBeforeSaving: true
   core:
     closeDeletedFileTabs: true
     closeEmptyWindows: false
@@ -66,7 +66,7 @@
       "atom-material-ui"
       "atom-material-syntax"
     ]
-    hideGitIgnoredFiles: true
+    hideGitIgnoredFiles: false
     disabledPackages: [
       "metrics"
       "tool-bar"
@@ -136,6 +136,17 @@
   pigments: {}
   "project-manager": {}
   docblockr: {}
+  "git-blame": {}
+  "project-manager": {}
+  linter:
+    showErrorPanel: false
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
+  whitespace: {}
+  blame: {}
+  "node-debugger":
+    nodePath: "/usr/local/bin/node"
+    appArgs: "node_modules/.bin/gulp"
 ".text.todo":
   editor:
     showInvisibles: true
