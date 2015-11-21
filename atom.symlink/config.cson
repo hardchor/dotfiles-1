@@ -23,10 +23,8 @@
     showIndentGuide: true
     fontFamily: "Inconsolata, Monaco, Consolas, 'Courier New', Courier"
     invisibles: {}
-    scrollPastEnd: true
     zoomFontWhenCtrlScrolling: true
     confirmCheckoutHeadRevision: false
-    fontSize: 15
     backUpBeforeSaving: true
   core:
     closeDeletedFileTabs: true
@@ -137,7 +135,6 @@
   "project-manager": {}
   docblockr: {}
   "git-blame": {}
-  "project-manager": {}
   linter:
     showErrorPanel: false
   "linter-eslint":
