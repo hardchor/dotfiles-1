@@ -1,56 +1,46 @@
 "*":
   "atom-beautify":
-    crystal:
-      beautify_on_save: true
-    css:
-      beautify_on_save: true
-    html:
-      beautify_on_save: true
+    general:
+      _analyticsUserId: "ff4ad0cc-0a8e-46f5-a80c-2cc5c8e68e04"
     js:
-      disabled: true
-    jsx:
-      disabled: true
-    markdown:
-      beautify_on_save: true
-    nginx:
-      beautify_on_save: true
-    ruby:
-      default_beautifier: "Ruby Beautify"
-  "autocomplete-modules":
-    babelPluginModuleResolver: true
-    webpack: true
-  editor:
-    showIndentGuide: true
-    fontFamily: "Inconsolata, Monaco, Consolas, 'Courier New', Courier"
-    invisibles: {}
-    zoomFontWhenCtrlScrolling: true
-    confirmCheckoutHeadRevision: false
-    backUpBeforeSaving: true
+      break_chained_methods: true
+      end_with_comma: true
+      end_with_newline: true
+      indent_size: 2
+      keep_function_indentation: true
+      wrap_line_length: 100
+  "atom-material-ui":
+    colors:
+      genAccent: true
+    fonts: {}
+    tabs:
+      tintedTabBar: true
+    treeView:
+      blendTabs: true
+      compactList: true
+    ui:
+      panelContrast: true
+      panelShadows: true
+  "atom-typescript": {}
+  "autocomplete-plus": {}
+  blame: {}
   core:
-    closeDeletedFileTabs: true
-    closeEmptyWindows: false
     customFileTypes:
       "source.ini": [
-        ".buckconfig"
-        ".hgrc"
-        ".flowconfig"
+        "env"
+        "env.dist"
       ]
-      "source.json": [
-        "BUCK.autodeps"
-      ]
-      "source.python": [
-        "BUCK"
+      "source.js": [
+        "js.snap"
       ]
     disabledPackages: [
-      "background-tips"
-      "exception-reporting"
       "metrics"
-      "react"
-      "linter-rubocop"
-      "tree-view"
+      "tool-bar"
+      "tool-bar-main"
+      "turbo-javascript"
+      "node-debugger"
     ]
-    followSymlinks: false
-    hideGitIgnoredFiles: true
+    hideGitIgnoredFiles: false
     ignoredNames: [
       ".bundle"
       ".git"
@@ -59,91 +49,66 @@
       "tmp"
       "vendor"
     ]
-    telemetryConsent: "no"
+    openEmptyEditorOnStart: false
+    telemetryConsent: "limited"
     themes: [
       "atom-material-ui"
       "atom-material-syntax"
     ]
-    hideGitIgnoredFiles: false
-    disabledPackages: [
-      "metrics"
-      "tool-bar"
-      "tool-bar-main"
-      "turbo-javascript"
-    ]
-    excludeVcsIgnoredPaths: false
+  docblockr:
+    align_tags: "shallow"
   editor:
-    fontFamily: "Menlo"
+    backUpBeforeSaving: true
+    confirmCheckoutHeadRevision: false
+    fontFamily: "Inconsolata, Monaco, Consolas, 'Courier New', Courier"
     invisibles: {}
+    preferredLineLength: 100
+    scrollPastEnd: true
     showIndentGuide: true
-    softWrapAtPreferredLineLength: true
-  "go-plus":
-    panel:
-      currentHeight: "24.11111111111111vh"
-    panelDisplayMode: "closed"
-    test: {}
+    zoomFontWhenCtrlScrolling: true
+  "exception-reporting":
+    userId: "72c3c5ce-7216-3fdf-8b35-60589c1cd689"
+  "git-blame": {}
+  "git-diff": {}
+  "language-babel":
+    autoIndentJSX: true
+  linter:
+    showErrorPanel: false
   "linter-eslint":
-    useGlobalEslint: true
-  "linter-rubocop": {}
-  "linter-ui-default":
-    panelHeight: 301
-  nuclide:
-    "atom-ide-code-format":
-      formatOnType: false
-    "nuclide-flow": {}
-  "prettier-atom":
-    formatOnSaveOptions:
-      enabled: true
+    disableWhenNoEslintrcFileInPath: true
+    fixOnSave: true
+  "markdown-preview": {}
+  "merge-conflicts": {}
+  "node-debugger":
+    appArgs: "node_modules/.bin/gulp"
+    nodePath: "/usr/local/bin/node"
+  pigments: {}
+  "project-manager":
+    includeGitRepositories: true
+    sortBy: "last modified"
+  react: {}
   "release-notes":
     viewedVersion: "0.89.0"
+  "ruby-test":
+    cucumberAllCommand: "bundle exec cucumber --tags ~@cross_browser --color"
+    cucumberFileCommand: "bundle exec cucumber --tags ~@cross_browser --color {relative_path}"
+    cucumberSingleCommand: "bundle exec cucumber --tags ~@cross_browser --color {relative_path}:{line_number}"
+    shell: "/usr/local/bin/zsh"
   "spell-check":
     grammars: [
       "text.plain"
       "source.gfm"
       "text.git-commit"
-      "text.html.basic"
     ]
-  stylefmt:
-    formatOnSave: true
-  welcome:
-    showOnStartup: false
-  "release-notes":
-    viewedVersion: "0.89.0"
-  "ruby-test":
-    shell: "/usr/local/bin/zsh"
-    cucumberAllCommand: "bundle exec cucumber --tags ~@cross_browser --color"
-    cucumberFileCommand: "bundle exec cucumber --tags ~@cross_browser --color {relative_path}"
-    cucumberSingleCommand: "bundle exec cucumber --tags ~@cross_browser --color {relative_path}:{line_number}"
-  "merge-conflicts": {}
-  "atom-material-ui":
-    compactTreeView: true
-    tabSize: "Small"
-    rippleAccentColor: true
-    showTabIcons: "Show on all tabs"
-    useRoboto: true
-    depth: true
-    panelContrast: true
-  "exception-reporting":
-    userId: "72c3c5ce-7216-3fdf-8b35-60589c1cd689"
   "tree-view":
     hideVcsIgnoredFiles: true
-  "autocomplete-plus": {}
-  "atom-beautify":
-    _analyticsUserId: "ff4ad0cc-0a8e-46f5-a80c-2cc5c8e68e04"
-  react: {}
-  pigments: {}
-  "project-manager": {}
-  docblockr: {}
-  "git-blame": {}
-  linter:
-    showErrorPanel: false
-  "linter-eslint":
-    disableWhenNoEslintrcFileInPath: true
+  welcome:
+    showOnStartup: false
   whitespace: {}
-  blame: {}
-  "node-debugger":
-    nodePath: "/usr/local/bin/node"
-    appArgs: "node_modules/.bin/gulp"
+".js.jsx.source":
+  editor:
+    autoIndentOnPaste: true
+    preferredLineLength: 120
 ".text.todo":
   editor:
     showInvisibles: true
