@@ -1,29 +1,12 @@
 "*":
-  "atom-beautify":
-    general:
-      _analyticsUserId: "ff4ad0cc-0a8e-46f5-a80c-2cc5c8e68e04"
-    js:
-      break_chained_methods: true
-      end_with_comma: true
-      end_with_newline: true
-      indent_size: 2
-      keep_function_indentation: true
-      wrap_line_length: 100
   "atom-material-ui":
-    colors:
-      genAccent: true
-    fonts: {}
+    colors: {}
     tabs:
+      noTabMinWidth: true
       tintedTabBar: true
-    treeView:
-      blendTabs: true
-      compactList: true
     ui:
       panelContrast: true
       panelShadows: true
-  "atom-typescript": {}
-  "autocomplete-plus": {}
-  blame: {}
   core:
     customFileTypes:
       "source.ini": [
@@ -34,74 +17,31 @@
         "js.snap"
       ]
     disabledPackages: [
-      "metrics"
-      "tool-bar"
-      "tool-bar-main"
-      "turbo-javascript"
-      "node-debugger"
+      "MagicPython"
     ]
-    hideGitIgnoredFiles: false
-    ignoredNames: [
-      ".bundle"
-      ".git"
-      "log"
-      "repositories"
-      "tmp"
-      "vendor"
-    ]
-    openEmptyEditorOnStart: false
     telemetryConsent: "limited"
     themes: [
       "atom-material-ui"
       "atom-material-syntax"
     ]
-  docblockr:
-    align_tags: "shallow"
+    titleBar: "custom"
   editor:
-    backUpBeforeSaving: true
-    confirmCheckoutHeadRevision: false
-    fontFamily: "Inconsolata, Monaco, Consolas, 'Courier New', Courier"
-    invisibles: {}
     preferredLineLength: 100
-    scrollPastEnd: true
-    showIndentGuide: true
-    zoomFontWhenCtrlScrolling: true
   "exception-reporting":
-    userId: "72c3c5ce-7216-3fdf-8b35-60589c1cd689"
-  "git-blame": {}
-  "git-diff": {}
-  "language-babel":
-    autoIndentJSX: true
-  linter:
-    showErrorPanel: false
-  "linter-eslint":
-    disableWhenNoEslintrcFileInPath: true
-    fixOnSave: true
-  "markdown-preview": {}
-  "merge-conflicts": {}
-  "node-debugger":
-    appArgs: "node_modules/.bin/gulp"
-    nodePath: "/usr/local/bin/node"
-  pigments: {}
-  "project-manager":
-    includeGitRepositories: true
-    sortBy: "last modified"
-  react: {}
-  "release-notes":
-    viewedVersion: "0.89.0"
-  "ruby-test":
-    cucumberAllCommand: "bundle exec cucumber --tags ~@cross_browser --color"
-    cucumberFileCommand: "bundle exec cucumber --tags ~@cross_browser --color {relative_path}"
-    cucumberSingleCommand: "bundle exec cucumber --tags ~@cross_browser --color {relative_path}:{line_number}"
-    shell: "/usr/local/bin/zsh"
-  "spell-check":
-    grammars: [
-      "text.plain"
-      "source.gfm"
-      "text.git-commit"
-    ]
-  "tree-view":
-    hideVcsIgnoredFiles: true
+    userId: "a15ea3da-f48b-475d-82ac-819cf893ec0d"
+  "linter-eslint": {}
+  "linter-ui-default":
+    showPanel: true
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      respectEslintignore: false
+      showInStatusBar: true
+    prettierOptions:
+      printWidth: 100
+      singleQuote: true
+      trailingComma: "es5"
+    useEslint: true
   welcome:
     showOnStartup: false
   whitespace: {}

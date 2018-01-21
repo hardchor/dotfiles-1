@@ -4,25 +4,87 @@
 [hub]
         protocol = https
 [alias]
-        co = checkout
         promote = !$ZSH/bin/git-promote
         wtf     = !$ZSH/bin/git-wtf
         rank-contributors = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
+        ap = add --patch
+        br = branch
+        ca = commit --amend
+        cb = !git rp HEAD
+        ci = commit
+        co = checkout
+        cp = cherry-pick
+        di = diff --no-prefix
+        dc = diff --cached --no-prefix
+        dn = push -u origin HEAD
+        du = diff --no-prefix @{u}
+        fo = fetch origin --prune
+        ls = ls-files
+        ma = merge --abort
+        mr = !git uk | grep '\\.orig$' | xargs -r -I {} rm -rf "{}"
+        mt = mergetool
+        ob = !test "`git cb`" != "HEAD"
+        pl = pull origin
+        ra = rebase --abort
+        rc = rebase --continue
+        rh = !sh -c 'git reset --hard ${1-@{u\\}}' -
+        ri = rebase --interactive
+        rp = rev-parse --symbolic-full-name --abbrev-ref
+        rs = rebase --skip
+        rv = log HEAD --not @{u} --reverse -p
+        sd = !sh -c 'git stash drop stash@{${1-0}}' -
+        sf = !sh -c 'git stash -q && git diff stash@{0}^! ${@:-.} | git apply && git stash && git stash pop -q stash@{1} && git checkout ${@:-.}' -
+        sl = stash list
+        sp = !sh -c 'git stash pop stash@{${1-0}}' -
+        ss = !sh -c 'git stash show stash@{${1-0}} -p --no-prefix' -
+        st = status
+        uk = !sh -c 'git status -s ${@:-.} | grep -F "\\?\\?" | cut -c4-' -
+        up = !git fo && git rebase -p @{u}
+        ur = !sh -c 'git status -s ${@:-.} | grep -F "\\?\\?" | cut -c4- | xargs -I {} rm -rf "{}"' -
 [color]
         diff = auto
         status = auto
         branch = auto
+        interactive = auto
         ui = true
+        pager = true
+[color "branch"]
+        current = yellow reverse
+        local = yellow
+        remote = green
+[color "diff"]
+        meta = yellow
+        frag = magenta
+        old = red bold
+        new = blue bold
+[color "grep"]
+        match = red bold
+        filename = magenta
+        linenumber = green
+[color "status"]
+        added = yellow
+        changed = green
+        untracked = cyan
+        nobranch = red
 [core]
         excludesfile = ~/.gitignore
         editor = vim
+        pager = less -FRSX
+[diff]
+        renames = copy
+[diff "mwbdiff"]
+        textconv = mwbdump
 [apply]
         whitespace = nowarn
+[merge]
+        tool = code
 [mergetool]
         keepBackup = false
 [difftool]
         prompt = false
+[pager]
+        status = true
 [help]
         autocorrect = 1
 [push]
@@ -30,4 +92,6 @@
         # for more information on different options of the below setting.
         #
         # Setting to git 2.0 default to suppress warning message
-        default = simple
+        default = upstream
+[tig]
+        tab-size = 4
