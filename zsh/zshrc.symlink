@@ -28,6 +28,7 @@ do
 done
 
 # initialize autocomplete here, otherwise functions won't be loaded
+plugins=(zsh-completions)
 autoload -U compinit
 compinit
 

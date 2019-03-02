@@ -57,7 +57,7 @@
         meta = yellow
         frag = magenta
         old = red bold
-        new = blue bold
+        new = yellow bold
 [color "grep"]
         match = red bold
         filename = magenta
@@ -95,3 +95,10 @@
         default = upstream
 [tig]
         tab-size = 4
+[credential]
+	helper = osxkeychain
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
