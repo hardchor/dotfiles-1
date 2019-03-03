@@ -27,9 +27,20 @@ do
   source $file
 done
 
-# initialize autocomplete here, otherwise functions won't be loaded
-autoload -U compinit
-compinit
+# Oh My Zsh could be installed somewhere out of dotfiles directory tree, e.g.
+# into  ~/.oh-my-zsh; the configuration file created by Oh My Zsh installer
+# should be moved as follows: {.zshrc => $DOTFILES/zsh/oh-my-zshrc}.
+if [[ -f $DOTFILES/zsh/.oh-my-zshrc ]]; then
+  () {
+    local ZSH="$HOME/.oh-my-zsh"
+    source $DOTFILES/zsh/.oh-my-zshrc
+    export OHMYZSH="$ZSH"
+  }
+else
+  # initialize autocomplete here, otherwise functions won't be loaded
+  autoload -U compinit
+  compinit
+fi
 
 # load every completion after autocomplete loads
 for file in ${(M)config_files:#*/completion.zsh}
