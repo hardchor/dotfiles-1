@@ -1,4 +1,0 @@
-'.source.js':
-    'console.log':
-        'prefix': 'cons'
-        'body': 'console.log(\'#####\'$1);'

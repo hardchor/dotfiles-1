@@ -1,2 +1,2 @@
-export EDITOR='atom'
+export EDITOR='code'
 export HISTCONTROL=ignoredups
