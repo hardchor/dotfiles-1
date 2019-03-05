@@ -36,7 +36,7 @@ if [[ -f $DOTFILES/zsh/.oh-my-zshrc ]]; then
     source $DOTFILES/zsh/.oh-my-zshrc
     export OHMYZSH="$ZSH"
   }
-else
+  
   # initialize autocomplete here, otherwise functions won't be loaded
   autoload -U compinit
   compinit
@@ -60,3 +60,4 @@ bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
 
 export PATH="$HOME/.yarn/bin:$PATH"
+
